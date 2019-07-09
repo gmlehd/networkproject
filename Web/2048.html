@@ -1,0 +1,43 @@
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>2048</title>
+    <style>
+        body{
+            height: 100%;
+		background-color: #ffffff;
+		background-image: url("images/overlay.png"), -moz-linear-gradient(60deg, rgba(255, 165, 150, 0.5) 5%, rgba(0, 228, 255, 0.35)), url("../../images/bg.jpg");
+		background-image: url("images/overlay.png"), -webkit-linear-gradient(60deg, rgba(255, 165, 150, 0.5) 5%, rgba(0, 228, 255, 0.35)), url("../../images/bg.jpg");
+		background-image: url("images/overlay.png"), -ms-linear-gradient(60deg, rgba(255, 165, 150, 0.5) 5%, rgba(0, 228, 255, 0.35)), url("../../images/bg.jpg");
+		background-image: url("images/overlay.png"), linear-gradient(60deg, rgba(255, 165, 150, 0.5) 5%, rgba(0, 228, 255, 0.35)), url("../../images/bg.jpg");
+        }
+        #table {
+            border-collapse: collapse;
+            user-select: none;
+            position: fixed;
+            top: 10%;
+
+            right: 35%;
+        }
+        #table td {
+            
+            border: 5px solid black;
+            width: 150px;
+            height: 150px;
+            font-size: 50px;
+            font-weight: bold;
+            text-align: center;
+        }
+        #score {
+            user-select: none;
+        }
+    </style>
+</head>
+<body>
+<table id="table">
+</table>
+<h1>점수</h1>
+<div id="score">0</div>
+<script src="./2048.js"></script>
+</body>
+</html>
