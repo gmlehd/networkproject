@@ -12,13 +12,47 @@
 		<link rel="stylesheet" href="assets/css/main.css" />
 		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
 	</head>
-	<body class="is-preload">
+	<style>
+	.navbar {
+  background: rgba(255, 123, 237, 0.794);
+  margin: 0; padding: 0;
+  list-style: none;
+  position: fixed;
+  width: 100%;
+  z-index: 5;
+  text-align: right;
+}
+.navbar>li {
+  display: inline-block;
+}
+.navbar>li>a {
+  display: block;
+  text-decoration: none;
+  padding: 10px 20px;
+  color: white;
+}
+.navbar>li>a:hover {
+  background: rgba(132, 247, 255, 0.76);
+  color: black;
+}
+</style>
 
+
+	<body class="is-preload">
+		<ul class="navbar">
+			<li><a href="#지뢰찾기">지뢰찾기</a></li>
+			<li><a href="#2048">2048</a></li>
+			<li><a href="#숫자야구">숫자야구</a></li>
+			<li><a href="#읍어요">rank</a></li>
+			<li><a href="index.html">Log out</a></li> 
+		  </ul>
 		<!-- Wrapper -->
 			<div id="wrapper">
 
 				<!-- Main -->
+				
                     <section id="main">
+							<a  name="지뢰찾기">
                         <header>
                             <span class="avatar"><img src="images/지뢰.png" alt="" width="300px"></span>
 
@@ -27,8 +61,9 @@
                             <p>지뢰 찾기 게임</p>
                         </header>
                     </section>
-                    <br>
-                    <section id="main">
+                    <br><a  name="2048">
+                    <section id="main" >
+							
                             <header>
                                 <span class="avatar"><img src="images/2048.png" alt="" width="300px"></span>
     
@@ -37,8 +72,9 @@
                                 <p>2048 게임</p>
                             </header>
                     </section>
-                    <br>
-                    <section id="main">
+                    <br><a name="숫자야구" >
+                    <section id="main" name="숫자야구">
+						
                             <header>
                                 <span class="avatar"><img src="images/숫자야구.png" alt="" width="300px"></span>
     
@@ -46,7 +82,7 @@
     
                                 <p>숫자 야구 게임</p>
                             </header>
-                    </section>
+					</section>
 					<footer id="footer">
 						<ul class="copyright">
 							<li>&copy; Jane Doe</li><li>Design: <a href="http://html5up.net">HTML5 UP</a></li>

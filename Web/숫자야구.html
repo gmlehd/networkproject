@@ -5,14 +5,42 @@
     <title>숫자야구</title>
 </head>
 <style>        body{
+    margin: 0;
         height: 100%;
     background-color: #ffffff;
     background-image: url("images/overlay.png"), -moz-linear-gradient(60deg, rgba(255, 165, 150, 0.5) 5%, rgba(0, 228, 255, 0.35)), url("../../images/bg.jpg");
     background-image: url("images/overlay.png"), -webkit-linear-gradient(60deg, rgba(255, 165, 150, 0.5) 5%, rgba(0, 228, 255, 0.35)), url("../../images/bg.jpg");
     background-image: url("images/overlay.png"), -ms-linear-gradient(60deg, rgba(255, 165, 150, 0.5) 5%, rgba(0, 228, 255, 0.35)), url("../../images/bg.jpg");
     background-image: url("images/overlay.png"), linear-gradient(60deg, rgba(255, 165, 150, 0.5) 5%, rgba(0, 228, 255, 0.35)), url("../../images/bg.jpg");
-    }</style>
+    }
+    .navbar {
+  background: rgba(255, 123, 237, 0.794);
+  margin: 0; padding: 0;
+  list-style: none;
+  position: relative;
+  width: 100%;
+  z-index: 5;
+  text-align: right;
+}
+.navbar>li {
+  display: inline-block;
+}
+.navbar>li>a {
+  display: block;
+  text-decoration: none;
+  padding: 10px 20px;
+  color: white;
+}
+.navbar>li>a:hover {
+  background: rgba(132, 247, 255, 0.76);
+  color: black;
+}
+    </style>
 <body>
+        <ul class="navbar">
+                <li><a href="home.html">HOME</a></li>
+                <li><a href="index.html">LOG OUT</a></li> 
+              </ul>
 <script src="숫자야구.js"></script>
 </body>
 </html>
